@@ -29,7 +29,7 @@ export const EditorDraggableTemplate = ({ template }: Props) => {
           src={template.image}
           width={1024}
           height={1024}
-          className="w-full h-full rounded-lg p-1"
+          className="w-full h-full rounded-lg p-1.5"
           alt={template.name}
           priority
         />

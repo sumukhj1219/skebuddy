@@ -13,7 +13,7 @@ export const LeftSidebarConfig: Template[] = [
     animation: "none",
     height: 180,
     width: 250,
-    code: TemplateCodeRecord.SkeletonProfileOne
+    code: TemplateCodeRecord.SkeletonProfileOne,
   },
   {
     id: uuid(),
@@ -24,6 +24,6 @@ export const LeftSidebarConfig: Template[] = [
     animation: "none",
     height: 180,
     width: 250,
-    code: TemplateCodeRecord.SkeletonCardOne
+    code: TemplateCodeRecord.SkeletonCardOne,
   },
 ];

@@ -1,5 +1,5 @@
 export const TemplateCodeRecord: Record<string, string> = {
-    SkeletonProfileOne: `
+  SkeletonProfileOne: `
     export function SkeletonProfileOne() {
   return (
     <div id="profile-one" className="flex items-center space-x-4">
@@ -12,7 +12,7 @@ export const TemplateCodeRecord: Record<string, string> = {
   );
 }
     `,
-    SkeletonCardOne: `
+  SkeletonCardOne: `
     export function SkeletonCardOne() {
   return (
     <div className="flex flex-col space-y-3">
@@ -24,5 +24,5 @@ export const TemplateCodeRecord: Record<string, string> = {
     </div>
   )
 }
-    `
-}
+    `,
+};
