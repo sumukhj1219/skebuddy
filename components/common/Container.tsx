@@ -12,7 +12,7 @@ const Container = forwardRef<HTMLDivElement, ContainerProps>(
         {children}
       </div>
     );
-  }
+  },
 );
 
 Container.displayName = "Container";

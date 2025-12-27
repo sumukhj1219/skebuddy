@@ -1,24 +1,24 @@
-import { Template } from "@/types/template"
-import { create } from "zustand"
+import { Template } from "@/types/template";
+import { create } from "zustand";
 
 export type DraggingTemplate = Template & {
-  startX: number
-  startY: number
-  grabOffsetX: number
-  grabOffsetY: number
-}
+  startX: number;
+  startY: number;
+  grabOffsetX: number;
+  grabOffsetY: number;
+};
 
 type EditorState = {
-  activeDraggingTemplate: DraggingTemplate | null
-  canvasTemplate: Template | null
-}
+  activeDraggingTemplate: DraggingTemplate | null;
+  canvasTemplate: Template | null;
+};
 
 type EditorActions = {
-  setActiveDraggingTemplate: (template: DraggingTemplate | null) => void
-  dropTemplate: (template: Template) => void
-  updateTemplate: (partial: Partial<Template>) => void
-  resetCanvas: () => void
-}
+  setActiveDraggingTemplate: (template: DraggingTemplate | null) => void;
+  dropTemplate: (template: Template) => void;
+  updateTemplate: (partial: Partial<Template>) => void;
+  resetCanvas: () => void;
+};
 
 export const useEditor = create<EditorState & EditorActions>((set) => ({
   activeDraggingTemplate: null,
@@ -45,4 +45,4 @@ export const useEditor = create<EditorState & EditorActions>((set) => ({
       activeDraggingTemplate: null,
       canvasTemplate: null,
     }),
-}))
+}));

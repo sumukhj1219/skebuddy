@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
 interface EmptyProps {
-  icon: React.ReactNode
-  title?: string
-  subTitle?: string
+  icon: React.ReactNode;
+  title?: string;
+  subTitle?: string;
 }
 
 const Empty = ({ icon, title, subTitle }: EmptyProps) => {
@@ -12,18 +12,14 @@ const Empty = ({ icon, title, subTitle }: EmptyProps) => {
       <div className="text-4xl">{icon}</div>
 
       {title && (
-        <span className="text-lg font-medium text-foreground">
-          {title}
-        </span>
+        <span className="text-lg font-medium text-foreground">{title}</span>
       )}
 
       {subTitle && (
-        <span className="text-sm text-muted-foreground">
-          {subTitle}
-        </span>
+        <span className="text-sm text-muted-foreground">{subTitle}</span>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Empty
+export default Empty;

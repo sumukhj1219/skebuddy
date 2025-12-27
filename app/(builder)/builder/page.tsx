@@ -1,9 +1,7 @@
-import { EditorMain } from "@/components/editor/EditorMain"
+import { EditorMain } from "@/components/editor/EditorMain";
 
 const EditorPage = () => {
-  return (
-    <EditorMain />
-  )
-}
+  return <EditorMain />;
+};
 
-export default EditorPage
+export default EditorPage;
