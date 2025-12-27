@@ -1,6 +1,6 @@
-import { Skeleton } from "@/components/ui/skeleton";
-
-export function SkeletonProfileOne() {
+export const TemplateCodeRecord: Record<string, string> = {
+    SkeletonProfileOne: `
+    export function SkeletonProfileOne() {
   return (
     <div id="profile-one" className="flex items-center space-x-4">
       <Skeleton className="h-12 w-12 rounded-full" />
@@ -11,8 +11,9 @@ export function SkeletonProfileOne() {
     </div>
   );
 }
-
-export function SkeletonCardOne() {
+    `,
+    SkeletonCardOne: `
+    export function SkeletonCardOne() {
   return (
     <div className="flex flex-col space-y-3">
       <Skeleton className="h-[125px] w-[250px] rounded-xl" />
@@ -22,4 +23,6 @@ export function SkeletonCardOne() {
       </div>
     </div>
   )
+}
+    `
 }

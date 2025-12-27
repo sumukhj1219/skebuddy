@@ -11,7 +11,7 @@ import { Button } from "../ui/button";
 import CodeBlock from "../code/CodeBlock";
 import { CloudUpload } from "lucide-react";
 import Empty from "../common/Empty";
-import Installations from "../code/Installations";
+import CodeInstallations from "../code/CodeInstallations";
 
 const ExportCodeDialog = () => {
   const { canvasTemplate } = useEditor();
@@ -44,7 +44,7 @@ const ExportCodeDialog = () => {
           />
         ) : (
           <>
-            <Installations />
+            <CodeInstallations />
             <CodeBlock />
           </>
         )}

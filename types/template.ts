@@ -10,4 +10,5 @@ export type Template = {
   animation: string;
   color?: string;
   htmlId: string;
+  code: string;
 };

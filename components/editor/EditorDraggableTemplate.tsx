@@ -24,14 +24,16 @@ export const EditorDraggableTemplate = ({ template }: Props) => {
       {...attributes}
       className="cursor-grab active:cursor-grabbing p-2"
     >
-      <Image
-        src={template.image}
-        width={1024}
-        height={1024}
-        className="w-full h-full rounded"
-        alt={template.name}
-        priority
-      />
+      <div className="border flex items-center justify-center mx-auto rounded-sm">
+        <Image
+          src={template.image}
+          width={1024}
+          height={1024}
+          className="w-full h-full rounded-lg p-1"
+          alt={template.name}
+          priority
+        />
+      </div>
     </div>
   );
 };
